@@ -20,12 +20,12 @@
 
         <div class="col-sm-12 col-md-6 d-flex justify-content-center">
             
-            <a href="juridico.html" class="btn btn-info px-5 py-4"><i class="fas fa-user mr-4 h3"></i>Jurídica</a>
+            <a href="tipos/juridica.php" class="btn btn-info px-5 py-4"><i class="fas fa-user mr-4 h3"></i>Jurídica</a>
         </div>
 
         <div class="col-sm-12 col-md-6 d-flex justify-content-center">
             
-            <a href="fisica.html" class="btn btn-info px-5 py-4"><i class="fas fa-building mr-4 h3"></i>Física</a>
+            <a href="tipos/fisica.php" class="btn btn-info px-5 py-4"><i class="fas fa-building mr-4 h3"></i>Física</a>
         </div>
 
     </div>

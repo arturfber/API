@@ -1,3 +1,11 @@
+<?php
+
+  require_once "../crud/conexao.php";
+
+?>
+
+
+
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -22,28 +30,28 @@
     
     <div class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
 
-      <form class="border p-5" method="" action="">
+      <form class="border p-5" method="GET" action="../crud/fisica/adicionar.php">
 
-        <h1 class="text-center m-3">Adicionar dados</h1>
+        <h1 class="text-center m-3">Cadastro pessoa Física</h1>
 
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="nome">Nome:</label>
-            <input type="text" class="form-control" id="nome" placeholder="Nome">
+            <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome">
           </div>
           <div class="form-group col-md-6">
             <label for="sobrenome">Sobrenome:</label>
-            <input type="text" class="form-control" id="sobrenome" placeholder="Sobrenome">
+            <input type="text" class="form-control" id="sobrenome" name="sobrenome" placeholder="Sobrenome">
           </div>
         </div>
 
         <div class="form-row">
           <div class="form-group col-md-4">
             <label for="idade">Data Nascimento:</label>
-            <input type="date" class="form-control" id="idade" placeholder="Data Nascimento">
+            <input type="date" class="form-control" id="idade" name="nascimento" placeholder="Data Nascimento">
           </div>
 
-          <div class="form-group col-md-4">
+          <!-- <div class="form-group col-md-4">
             <label for="sexo">Sexo:</label>
             <select class="custom-select">
               <option selected>- Selecione -</option>
@@ -51,17 +59,17 @@
               <option value="2">Feminino</option>
               <option value="3">Outro</option>
             </select>
-          </div>
+          </div> -->
           <div class="form-group col-md-4">
             <label for="telefone">Telefone:</label>
-            <input type="date" class="form-control" id="telefone" placeholder="Telefone">
+            <input type="number" class="form-control" id="telefone" name="telefone" placeholder="Telefone">
           </div>
         </div>
 
         <div class="form-row">
           <div class="form-group col-md-4">
             <label for="cep">CEP</label>
-            <input type="number" class="form-control" id="cep" placeholder="CEP">
+            <input type="text" class="form-control" id="cep" name="cep" placeholder="CEP">
           </div>
 
           <div class="form-group col-md-8 d-flex align-items-end">
@@ -72,27 +80,27 @@
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="rua">Rua:</label>
-            <input type="text" class="form-control" id="rua" placeholder="Rua">
+            <input type="text" class="form-control" id="rua" name="rua" placeholder="Rua">
           </div>
           <div class="form-group col-md-6">
             <label for="complemento">Complemento:</label>
-            <input type="text" class="form-control" id="complemento" placeholder="Complemento">
+            <input type="text" class="form-control" id="complemento" name="complemento" placeholder="Complemento">
           </div>
         </div>
 
         <div class="form-row">
           <div class="form-group col-md-4">
             <label for="bairro">Bairro:</label>
-            <input type="text" class="form-control" id="bairro" placeholder="Bairro">
+            <input type="text" class="form-control" id="bairro" name="bairro" placeholder="Bairro">
           </div>
           <div class="form-group col-md-4">
             <label for="cidade">Cidade:</label>
-            <input type="text" class="form-control" id="cidade" placeholder="Cidade">
+            <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade">
           </div>
 
           <div class="form-group col-md-4">
             <label for="estado">Estado:</label>
-            <input type="text" class="form-control" id="estado" placeholder="Estado">
+            <input type="text" class="form-control" id="estado" name="estado" placeholder="Estado">
           </div>
         </div>
       
